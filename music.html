@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- Student Name: Sarabjeet Singh G Pulaha   -->
+<html lang="en">
+  
+  <head>
+    <title>A Music Web Application</title>
+    <meta charset="utf-8"/>
+  
+    <script type="text/javascript" src="music.js"></script>
+    
+    <style>
+    .headingName
+    {
+      font-family: "Lucida Sans Unicode", "sans-serif"; font-size: 20px; text-align: center;
+    }
+
+    .button{ background-color:#1bbc9b; border:none; padding: 2px 2px 2px 2px; border-radius: 4px; color:white; font-family: Lucida, sans-serif; font-size: 20px;
+      margin-top: 20px;}
+    
+    .bioStyle
+    { font-family: open sans, sans-serif, Calibri;}
+
+    .s1
+    { width: 500px; padding: 15px; border: 2px solid red; margin-top: 15px;}
+
+    .centerTag
+    {      margin-left: 500px; margin-right: 500px; width: 70%;  }
+
+    .s2
+    { width: 500px; margin-left: 500px;} 
+    </style>
+  
+  </head>
+
+  <body onload="initialize();">
+    <form>
+       <center><label class="headingName">Artist name: <input type="text" id="form-input" class="headingName"/></label></center>
+       
+       <center><input type="button" onclick="sendRequest();" value="Display Info" placeholder="Enter name of artist" class="button"></center>
+       <!--button onclick="sendRequest()" placeholder="Enter name of artist"> Display Info </button -->
+    </form>
+
+    <div id="output" class="headingName">&nbsp;</div>    
+    <div id="bioArtist" class="bioStyle"></div>
+
+    <div id="albumTitle" class="bioStyle"></div>
+    <div id="outputA" class="bioStyle"></div>   
+    
+
+    <div id="eventTitle" class="bioStyle"></div>
+    <div id="outputE" class="bioStyle"></div>
+    <div id="eventAdd"></div>
+
+  </body>
+
+</html>
